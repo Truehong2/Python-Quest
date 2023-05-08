@@ -1,0 +1,27 @@
+maze = [[0, 1, 0, 0, 0], [0, 0, 0, 1, 0], [0, 1, 1, 0, 0], [0, 0, 1, 1, 0], [0, 0, 0, 0, 0]]
+
+# start_x = maze[0][0]
+# start_y = maze[0][0]
+
+i=start_x = 0
+j=start_y = 0
+           
+                                      # 2차원 리스트의 값을 바꿔 줄 수 있는 함수 정의
+def solve_maze(*args):
+for i in range(5):
+    for j in range(5):         # 4,4까지 도달해야 하는 함수 정의, 가는 도중 1이 있으면 print
+        if maze[i][j] == 0: # 현재 좌표에서 1에 닿으면 이동해줘야 함
+            maze[i][j] = 2
+            print("미로를 찾을 수 없습니다.")
+        elif maze[i][j] != 0 :
+        if maze[i+1][j] == 0:
+            maze[i+1][j] = 2
+            print("미로를 찾았습니다.")
+                                # 지나갈 수 있는 길, 리스트 내부 값을 2로 변경해줘야 함 
+
+
+goto(start_x, start_y)
+solve_maze(start_x, start_y)
+import pprint
+pprint.pprint(maze)
+# 행을 한 칸씩 오른쪽으로 이동하다가 1을 만나면 밑으로 가고나서 오른쪽으로, 밑에서 1을 만나면 위로 가고 오른쪽으로 가는 함수, 끝까지 가면 아래쪽으로 이동
