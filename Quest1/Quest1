@@ -1,0 +1,23 @@
+word = []
+word = input('회문: ')
+
+compare = word[::-1]
+
+while word:
+    if (word == compare):
+        print('입력한 단어는 회문이 맞습니다')
+        break
+    else:
+        print('다시 입력해보세요')
+        break
+     
+compare = list()
+compare = str(input("원하시는 회문을 입력해주세요: "))
+
+reversed_word = compare[::-1]
+
+if (compare == reversed_word):
+  print(compare)
+
+else:
+  print("다시 입력 하세요")
