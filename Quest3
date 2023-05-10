@@ -1,0 +1,21 @@
+from google.colab import drive
+drive.mount('/content/drive')
+
+with open('/content/drive/MyDrive/06TheAvengers.txt', 'r') as f:
+  text = f.read()
+print(text)                     # 파일 불러오는 코드
+
+text = f
+
+text.lower().split()        # 소문자로 변경해주기, 스플릿 해서 
+ 
+max2gram =  # 텍스트를 받고, 가장 많은 빈도의 두 단어 출력 
+
+
+
+# if(len())
+
+# print(max2gram, countdict[max2gram])
+# print(Counter(baglist))
+
+# 
