@@ -5,6 +5,7 @@
 
 ---
 ## 코랩 링크 https://colab.research.google.com/drive/1QHLTgaUGYwrOCI1Gk9TxElpD0vVeTyWM#scrollTo=d84CqqcfkjbU
+
 # PRT(PeerReviewTemplate)
 
 각 항목을 스스로 확인하고 체크하고 확인하여 작성한 코드에 적용하세요.
@@ -26,7 +27,7 @@
 3. 참고한 링크 및 ChatGPT 프롬프트 명령어가 있다면 주석으로 남겨주세요.
    
    ```python
-
+```
 class Fish:
     def __init__(self, name, speed): # fish 클래스를 정의, 이름과 속력을 줌
         self.name = name
@@ -65,7 +66,8 @@ print("\nUsing generator:")
 show_fish_movement_generator(fish_list)
 # print(*show_fish_movement_generator(fish_list)) # 출력하면 컴프리헨션과 똑같이 나와주지만 위의 코드만 이용해서 출력하게 해야한다면 사용 불가
    ```
-   
+```
+
    - Code 에 대한 리뷰어의 Comment 를 남겨주세요
 
 엄청난 정성이 느껴지는 코드네요.. 고생 많으셨습니다. 원하는 출력이 나오지 않아서 주석을 달아 원하는 출력이 되게 만든 점. 제너레이터 함수 앞에 *을 붙여 언팩킹하여 코드를 출력 한 부분 정말 인상깊었습니다. 또 show_fish_movement_generator() 함수 안에 yield 부분 print를 사용하지 않고 바로 출력문을 입력 한 것 배워갑니다. return에서는 사용 할 줄 알았는데 yield에서도 사용이 가능하군요!
